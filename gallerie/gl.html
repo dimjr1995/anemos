@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./mlogo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+    <title>Anemos Gallerie</title> 
+</head>
+<style>
+        body {
+            max-height: 100vh; 
+            overflow-y: auto; 
+            margin: 0; 
+        }
+    </style>
+<body >
+    <section class="section about text-center" aria-labelledby="about-label" id="about" style="background-color: black;">
+        <div class="container">
+
+            <div class="about-content">
+
+                
+                <p class="label-2 section-subtitle" id="about-label"></p>
+
+                <p class="section-subtitle label-2">Gallerie</p>
+
+            </div>
+
+            <figure class="about-banner">
+
+
+                <video controls autoplay muted id="myVideo" style="max-width: 100%; height: auto; width: 100%;">
+                    <source src="./assets/images/gal.mp4" type="video/mp4">
+                </video>
+                <script>
+
+                    const video = document.getElementById('myVideo');
+
+
+                    video.addEventListener('ended', function () {
+
+                        video.currentTime = 0;
+                        video.play();
+                    });
+                </script>
+
+
+
+                <div class="abs-img abs-img-2 has-before">
+                    <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+                </div>
+
+            </figure>
+
+
+
+        </div>
+    </section>
+	
+
+</body>
+</html>
